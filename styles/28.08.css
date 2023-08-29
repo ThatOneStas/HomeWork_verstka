@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+}
+
+/* ------------ */
+
+.box_model1 {
+    background-color: rgb(148, 212, 176);
+    color: aliceblue;
+
+    width: 50%;
+    height: 250px;
+
+    margin: 40px 0px 0px 40px;
+
+    font-family: Arial;
+    font-size: 20px;
+}
+
+ol {
+    margin: 0px;
+}
+
+.box_model1 section {
+    background-color: rgb(99, 175, 132);
+    
+    width: 80%;
+    height: 40px;
+
+    margin: 10px 0px 10px 0px;
+}
+
+.box_model1 li {
+    background-color: rgb(64, 119, 88);
+
+    height: 100%;
+    width: fit-content;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* ------------ */
+
+.box_model2 {
+    width: 50%;
+    height: 300px;
+
+    margin: 40px 0px 0px 40px;
+
+    font-family: Arial;
+    font-size: 20px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.box_model2 section {
+    width: 100%;
+    height: 50px;
+}
+
+.box_model2 li {
+    margin-left: 10%;
+    padding-top: 12px;
+}
+
+.box_model2 .section_type1 {
+    background-color: rgb(178, 226, 226);
+}
+
+.box_model2 .section_type2 {
+    background-color: rgb(152, 205, 205);
+}
+
+.box_model2 .section_type1:hover {
+    background-color: rgb(235, 235, 235);
+
+    text-decoration-line: line-through;
+    text-decoration-color: rgb(146, 55, 55);
+
+    transition: 0.4s;
+}
+
+.box_model2 .section_type2:hover {
+    background-color: rgb(235, 235, 235);
+
+    text-decoration-line: line-through;
+    text-decoration-color: rgb(146, 55, 55);
+
+    transition: 0.4s;
+}
