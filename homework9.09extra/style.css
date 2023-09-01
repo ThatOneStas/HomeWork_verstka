@@ -1,0 +1,111 @@
+body {
+    margin: 0px;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+
+    font-family: Arial;
+    text-align: center;
+
+    margin: 0px 0px 20px 0px;
+
+    color: white;
+    background-color: brown;
+}
+
+footer {
+    width: 100%;
+    height: 90px;
+
+    font-family: Arial;
+    text-align: center;
+
+    color: white;
+    background-color: brown;
+}
+
+#main_img_model {
+    width: 100%;
+    height: fit-content;
+
+    font-family: Arial;
+    text-align: center;
+
+    margin: 0px 0px 20px 0px;
+}
+
+#text_model {
+    width: 100%;
+    height: auto;
+
+    font-family: Arial;
+
+    margin: 0px 0px 20px 0px;
+
+    text-align: center;
+}
+
+#imgs_model {
+    width: 100%;
+    height: 200px;
+
+    margin: 0px 0px 20px 0px;
+
+    text-align: center;
+}
+
+#camaro_link {
+    color: darkorange;
+
+    transition: 0.2s;
+}
+
+#camaro_link:hover {
+    color: rgb(22, 8, 73);
+    
+    transition: 0.3s;
+}
+
+#main_camaro {
+    width: 700px;
+    height: 340px;
+
+    border-radius: 16px;
+
+    margin: 0px;
+
+    margin: 0px;
+}
+
+.imgs {
+    width: 280px;
+    height: 180px;
+
+    border-radius: 7px;
+
+    margin: 10px 10px 10px 30px;
+
+    filter: grayscale(100);
+
+    transition: 0.2s;
+}
+
+.imgs:hover {
+    width: 290px;
+    height: 190px;
+
+    border-radius: 7px;
+
+    filter: grayscale(0);
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.div_text_folder {
+    margin-top: 10px;
+    /* працює не так як треба */
+}
