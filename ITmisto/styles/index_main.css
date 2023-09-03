@@ -1,0 +1,421 @@
+body {
+    margin: 0px;
+
+    font-family: Arial;
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ---HEADER--- */
+
+header {
+    width: 80%;
+    height: 65px;
+
+    padding-top: 20px;
+
+    margin-bottom: 80px;
+
+    display: flex;
+
+    position: relative;
+}
+
+header .header_link {
+    height: 100%;
+    width: max-content;
+
+    display: flex;
+
+    align-items: center;
+
+    position: absolute;
+
+    right: 0px;
+}
+
+header .header_link a div{
+    width: 134px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #FF9100;
+
+    color: #ffffff;
+    font-weight: 600;
+    
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px 10px;
+
+    transition: 0.2s;
+}
+
+header .header_link a:hover div{
+    width: 140px;
+
+    background-color: #e28205;
+
+    transition: 0.2s;
+}
+
+header .header_link #common_links {
+    color: #FF9100;
+    font-weight: 600;
+
+    margin: 0px 10px;
+
+    transition: 0.2s;
+}
+
+header .header_link #common_links:hover {
+    color: #D56363;
+
+    transition: 0.2s;
+}
+
+
+/* ---HEADER end--- */
+
+/* ---SECTIONS--- */
+
+#itmisto_info {
+    width: 80%;
+    height: 434px;
+
+    margin: 0px 10% 60px 10%;
+
+    display: flex;
+}
+
+
+#itmisto_info .text_model {
+    width: 45%;
+    height: 100%;
+
+    position: relative;
+}
+
+#itmisto_info .text_model a div {
+    width: 253px;
+    height: 43px;
+    
+    border-radius: 10px;
+
+    color: white;
+    background-color: #FF9100;
+
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
+
+    transition: 0.2s;
+}
+
+#itmisto_info .text_model a:hover div {
+    width: 260px;
+
+    background-color: #e28205;
+
+    transition: 0.2s;
+}
+
+#itmisto_info .slider_model {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-left: 5%;
+}
+
+#itmisto_info .slider_model .slider {
+    width: 100%;
+    height: 80%;
+
+    background-image: url(../img_folder/ITmisto_slider_img1.png);
+
+    position: relative;
+
+    border-radius: 40px;
+}
+
+#itmisto_info .slider_model .slider .arrow1 {
+    width: 21px;
+    height: 42px;
+
+    position: absolute;
+
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+
+#itmisto_info .slider_model .slider .arrow1 {
+    width: 21px;
+    height: 42px;
+
+    position: absolute;
+    rotate: -180deg;
+
+    left: 7px;
+    top: 151px;
+    bottom: 151px;
+}
+
+#itmisto_info .slider_model .slider .arrow2 {
+    width: 21px;
+    height: 42px;
+
+    position: absolute;
+
+    right: 7px;
+    top: 151px;
+    bottom: 151px;
+}
+
+#itmisto_info .slider_model .slider {
+    width: 100%;
+    height: 80%;
+
+    position: relative;
+
+}
+
+#itmisto_info .slider_model .dots {
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+#itmisto_info .slider_model .dots div {
+    width: 18px;
+    height: 18px;
+
+    background-color: #FF9100;
+
+    margin: 10px 10px 0px 10px;
+
+    border-radius: 50%;
+}
+
+#projects_and_team .projects_cards {
+    width: 100%;
+
+    margin-bottom: 60px;
+
+    text-align: center;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+#projects_and_team .projects_cards .teacher_card, .courses_card, .koworking_card, .contest_card {
+    width: 261px;
+    height: 305px;
+
+    color: white;
+    background-color: #FF9100F5;
+    border-radius: 15px;
+    
+    margin: 10px 30px 0px 30px;
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    transition: 0.3s;
+}
+#projects_and_team .projects_cards .teacher_card:hover, .courses_card:hover, .koworking_card:hover, .contest_card:hover {
+    background-color: #D56363;
+    
+    margin: 0px 30px 0px 30px;
+
+    transition: 0.4s;
+}
+
+#projects_and_team {
+    width: 100%;
+    height: 671px;
+
+    margin-bottom: 60px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects_and_team .line_projects {
+    width: 100%;
+
+    font-weight: 200;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+#projects_and_team .line_projects .line {
+    width: 30%;
+    height: 2px;
+
+    background-color: #FF9100;
+}
+
+#partners {
+    width: 100%;
+    height: 108px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 60px;
+}
+
+#partners div img {
+    margin: 0px 30px;
+
+    filter: grayscale(100);
+
+    transition: 0.3s;
+}
+
+#partners div img:hover {
+    filter: grayscale(0);
+
+    transition: 0.3s;
+}
+
+/* ---SECTIONS end--- */
+
+/* ---FOOTER--- */
+
+footer {
+    width: 100%;
+    height: 300px;
+
+    background-color: #FF9100;
+
+
+    display: flex;
+
+    justify-content: center;
+}
+
+footer .link1_box, .link2_box {
+    position: relative;
+}
+
+
+footer .link1_box :nth-child(1) {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+
+    left: 30px;
+    top: 30px;
+}
+
+footer .link1_box :nth-child(2) {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+
+    left: 30px;
+    top: 70px;
+}
+footer .link1_box :nth-child(3) {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+
+    left: 30px;
+    top: 110px;
+}
+
+footer .link1_box {
+    position: relative;
+}
+
+footer .link2_box :nth-child(1) {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+
+    left: 30px;
+    top: 30px;
+}
+
+footer .link2_box :nth-child(2) {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+
+    left: 30px;
+    top: 70px;
+}
+
+footer .contacts_box .contacts_row1{
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+}
+
+footer .contacts_box .contacts_row1 :nth-child(n){
+    margin: 30px 10px 20px 10px;
+}
+
+footer .contacts_box .contacts_row2{
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+}
+
+footer .contacts_box .contacts_row2 :nth-child(n){
+    margin: 0px 10px 20px 10px;
+}
+
+footer .contacts_box .contacts_row3{
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+footer .contacts_box .contacts_row3 a {
+    margin: 0px 20px;
+}
+
+/* ---FOOTER end--- */
