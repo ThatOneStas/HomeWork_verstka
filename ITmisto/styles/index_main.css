@@ -95,12 +95,22 @@ header .header_link #common_links:hover {
 #itmisto_info {
     width: 100%;
     height: 434px;
-    margin-bottom: 60px;
+    margin-bottom: 62px;
 
     display: flex;
     position: relative;
 }
 
+#itmisto_info #h2_main {
+    color: #374B5C;
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+    margin-bottom: 4px;
+}
 
 #itmisto_info .text_model {
     width: 45%;
@@ -121,6 +131,7 @@ header .header_link #common_links:hover {
 
 
 #itmisto_info .text_model h1 {
+    height: 70px;
     color: #374B5C;
     font-family: 'Roboto Slab';
     font-size: 64px;
@@ -128,7 +139,7 @@ header .header_link #common_links:hover {
     font-weight: 700;
     line-height: normal;
 
-    margin: 4px 0px 21px 0px;
+    margin: 0px 0px 21px 0px;
 }
 
 #itmisto_info .text_model a div {
@@ -258,6 +269,18 @@ header .header_link #common_links:hover {
     align-items: center;
 }
 
+#projects_and_team #h3_main {
+    color: #374B5C;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-bottom: 46px;
+}
+
 #projects_and_team .projects_cards {
     width: 100%;
     padding-left: 156px;
@@ -266,6 +289,10 @@ header .header_link #common_links:hover {
 
     display: flex;
     justify-content: space-evenly;
+}
+
+#projects_and_team .projects_cards .arrow1,.arrow2 {
+    display: none;
 }
 
 #projects_and_team .projects_cards .teacher_card, .courses_card, .koworking_card, .contest_card {
@@ -343,13 +370,14 @@ header .header_link #common_links:hover {
     padding: 0 156px;
     box-sizing: border-box;
 
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
 }
 
 #partners img {
     width: 151px;
     height: 60px;
+    justify-self: center;
 }
 
 #partners img {
@@ -472,9 +500,21 @@ footer .line {
 
     }
 
+    header .header_link {
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
     header .header_logo img {
         width: 108px;
         height: 43px;
+    }
+
+    header .header_link #contact_bottom{
+        position: absolute;
+        top: 24px
     }
 
     header .header_link a div{
@@ -504,18 +544,10 @@ footer .line {
     
         transition: 0.2s;
     }
-    
-        
+         
     header .header_link #common_links {
         display: none;
 
-    }
-
-    header .header_link {
-        width: fit-content;
-        height: 100%;
-        display: flex;
-        align-items: center;
     }
 
     header .burger{
@@ -608,14 +640,25 @@ footer .line {
     
     #itmisto_info {
         width: 90%;
-        height: 695px;
-        margin-bottom: 60px;
+        height: 640px;
+        margin-bottom: 43px;
     
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    #itmisto_info #h2_main {
+        color: #374B5C;
+        text-align: center;
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
     
+        margin-bottom: 0px;
+    }
     
     #itmisto_info .text_model {
         width: 100%;
@@ -782,18 +825,38 @@ footer .line {
         flex-direction: column;
         align-items: center;
     }
-    
-    #projects_and_team .projects_cards {
-        width: 100%;
-        padding-left: 156px;
-        padding-right: 156px;
-        box-sizing: border-box;
-    
-        display: flex;
-        justify-content: space-evenly;
+
+    #projects_and_team #h3_main {
+        display: none;
     }
     
-    #projects_and_team .projects_cards .teacher_card, .courses_card, .koworking_card, .contest_card {
+    #projects_and_team .projects_cards {
+        width: 90%;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #projects_and_team .projects_cards .arrow1,.arrow2 {
+        display: block;
+        position: absolute;
+        top: 10px;
+    }
+
+    #projects_and_team .projects_cards .arrow1 {
+        left: 10px;
+    }
+
+    #projects_and_team .projects_cards .arrow2 {
+        right: 10px;
+        rotate: 180deg;
+    }
+
+    #projects_and_team .projects_cards .teacher_card, .courses_card, .koworking_card {
+        display: none;
+    }
+    
+    #projects_and_team .contest_card {
         width: 261px;
         height: 305px;
     
@@ -804,13 +867,14 @@ footer .line {
         margin: 10px 0px 0px 0px;
     
         display: flex;
+        position: relative;
     
         flex-direction: column;
         align-items: center;
     
         transition: 0.3s;
     }
-    #projects_and_team .projects_cards .teacher_card:hover, .courses_card:hover, .koworking_card:hover, .contest_card:hover {
+    #projects_and_team .contest_card:hover {
         background-color: #D56363;
         
         margin: 0px 0px 0px 0px;
@@ -839,9 +903,9 @@ footer .line {
     }
     
     #partners {
-        width: 100%;
+        width: 90%;
         height: fit-content;
-        margin-bottom: 116px;
+        margin-bottom: 45px;
     
         display: flex;
         flex-direction: column;
@@ -865,11 +929,22 @@ footer .line {
     
     #partners .icons {
         width: 100%;
-        padding: 0 156px;
+        padding: 0px 0px;
         box-sizing: border-box;
     
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 21px;
+    }
+    
+    #partners img {
+        width: 151px;
+        height: 60px;
+        justify-self: center;
+    }
+
+    #partners #del {
+        display: none;
     }
     
     #partners img {
