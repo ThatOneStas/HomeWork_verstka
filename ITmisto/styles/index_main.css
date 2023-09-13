@@ -259,8 +259,8 @@ header .header_link #common_links:hover {
 
 #projects_and_team {
     width: 100%;
-    height: 671px;
-    margin-bottom: 60px;
+    height: fit-content;
+    margin-bottom: 137px;
 
     text-align: center;
 
@@ -285,6 +285,7 @@ header .header_link #common_links:hover {
     width: 100%;
     padding-left: 156px;
     padding-right: 156px;
+    margin-bottom: 170px;
     box-sizing: border-box;
 
     display: flex;
@@ -323,6 +324,41 @@ header .header_link #common_links:hover {
 
 #projects_and_team .line_projects {
     width: 100%;
+    height: fit-content;
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects_and_team .line_projects h2 {
+    color: #FF9100;
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+#projects_and_team .line_projects .line1 {
+    width: 35%;
+    height: 2px;
+    position: absolute;
+    left: 0px;
+    background-color: #FF9100;
+}
+#projects_and_team .line_projects .line2 {
+    width: 35%;
+    height: 2px;
+    position: absolute;
+    right: 0px;
+    background-color: #FF9100;
+}
+
+#projects_and_team .line_team {
+    width: 100%;
+    padding-bottom: 47px;
 
     font-weight: 200;
 
@@ -332,12 +368,124 @@ header .header_link #common_links:hover {
     align-items: center;
 }
 
+#projects_and_team .line_team h2 {
+    color: #D46363;
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
-#projects_and_team .line_projects .line {
-    width: 30%;
+#projects_and_team .line_team .line1 {
+    width: 40%;
     height: 2px;
-
+    position: absolute;
+    left: 0px;
     background-color: #FF9100;
+}
+#projects_and_team .line_team .line2 {
+    width: 40%;
+    height: 2px;
+    position: absolute;
+    right: 0px;
+    background-color: #FF9100;
+}
+
+#projects_and_team .team {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects_and_team .slider_row {
+    width: 100%;
+    margin-bottom: 38px;
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+#projects_and_team .slider_row .team_img1,.team_img2 {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 80px;
+}
+
+#projects_and_team .slider_row .team_img1 {
+    left: 11.5%;
+}
+
+#projects_and_team .slider_row .team_img2 {
+    right: 11.5%;
+}
+
+#projects_and_team .slider {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#projects_and_team .slider .Circle_1,.Circle_2,.Circle_3 {
+    width: 224px;
+    height: 224px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#projects_and_team .slider .Circle_1 {
+    background-image: url(../img_folder/Ellipse\ 2.png);
+}
+
+#projects_and_team .slider .Circle_2 {
+    background-image: url(../img_folder/Ellipse\ 1.png);
+    margin: 0px 83px;
+}
+
+#projects_and_team .slider .Circle_3 {
+    background-image: url(../img_folder/Ellipse\ 3.png);
+}
+
+#projects_and_team .team_button {
+    width: 523px;
+    height: 97px;
+    border-radius: 14px;
+    background-color: #FF9100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.2s;
+}
+
+#projects_and_team .team_button:hover {
+    width: 543px;
+    background-color: #e28205;
+
+    transition: 0.2s;
+}
+
+#projects_and_team .team_button h2 {
+    color: #FFFDFD;
+    font-family: 'Roboto';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+    transition: 0.2s;
+}
+
+#projects_and_team .team_button:hover h2 {
+    font-size: 30px;
+
+    transition: 0.2s;
 }
 
 #partners {
@@ -351,7 +499,7 @@ header .header_link #common_links:hover {
 
 #partners .text {
     width: 100%;
-    margin-bottom: 48px;
+    margin-bottom: 43px;
     text-align: center;
 }
 
@@ -512,7 +660,7 @@ footer .line {
         height: 43px;
     }
 
-    header .header_link #contact_bottom{
+    header .header_link #contact_button{
         position: absolute;
         top: 24px
     }
@@ -816,8 +964,8 @@ footer .line {
     
     #projects_and_team {
         width: 100%;
-        height: 671px;
-        margin-bottom: 60px;
+        height: fit-content;
+        margin-bottom: 29px;
     
         text-align: center;
     
@@ -832,6 +980,7 @@ footer .line {
     
     #projects_and_team .projects_cards {
         width: 90%;
+        margin-bottom: 29px;
         padding: 0px;
         display: flex;
         justify-content: center;
@@ -885,6 +1034,41 @@ footer .line {
     
     #projects_and_team .line_projects {
         width: 100%;
+        height: fit-content;
+    
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #projects_and_team .line_projects h2 {
+        color: #FF9100;
+        font-family: 'Roboto';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    #projects_and_team .line_projects .line1 {
+        width: 85px;
+        height: 2px;
+        position: absolute;
+        left: 0px;
+        background-color: #FF9100;
+    }
+    #projects_and_team .line_projects .line2 {
+        width: 85px;
+        height: 2px;
+        position: absolute;
+        right: 0px;
+        background-color: #FF9100;
+    }
+    
+    #projects_and_team .line_team {
+        width: 100%;
+        padding-bottom: 47px;
     
         font-weight: 200;
     
@@ -894,12 +1078,110 @@ footer .line {
         align-items: center;
     }
     
+    #projects_and_team .line_team h2 {
+        color: #D46363;
+        text-align: center;
+        font-family: 'Roboto';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
     
-    #projects_and_team .line_projects .line {
-        width: 30%;
+    #projects_and_team .line_team .line1 {
+        width: 112px;
         height: 2px;
-    
+        position: absolute;
+        left: 0px;
         background-color: #FF9100;
+    }
+    #projects_and_team .line_team .line2 {
+        width: 112px;
+        height: 2px;
+        position: absolute;
+        right: 0px;
+        background-color: #FF9100;
+    }
+    
+    #projects_and_team .team {
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #projects_and_team .slider_row {
+        width: 100%;
+        margin-bottom: 38px;
+    
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+    
+    #projects_and_team .slider_row .team_img1,.team_img2 {
+        display: none;
+    }
+    
+    #projects_and_team .slider {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    #projects_and_team .slider .Circle_1,.Circle_2,.Circle_3 {
+        width: 95px;
+        height: 95px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #projects_and_team .slider .Circle_1 {
+        background-image: url(../img_folder/Ellipse\ 2.png);
+    }
+    
+    #projects_and_team .slider .Circle_2 {
+        background-image: url(../img_folder/Ellipse\ 1.png);
+        margin: 0px 35px;
+    }
+    
+    #projects_and_team .slider .Circle_3 {
+        background-image: url(../img_folder/Ellipse\ 3.png);
+    }
+    
+    #projects_and_team .team_button {
+        width: 223px;
+        height: 42px;
+        border-radius: 14px;
+        background-color: #FF9100;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #projects_and_team .team_button:hover {
+        width: 243px;
+
+        transition: 0.2s;
+    }
+    
+    #projects_and_team .team_button h2 {
+        color: #FFFDFD;
+        text-align: center;
+        font-family: 'Roboto';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
+
+    #projects_and_team .team_button:hover h2 {
+        font-size: 15px;
+
+        transition: 0.2s;
     }
     
     #partners {
@@ -913,7 +1195,7 @@ footer .line {
     
     #partners .text {
         width: 100%;
-        margin-bottom: 48px;
+        margin-bottom: 21px;
         text-align: center;
     }
     
@@ -921,7 +1203,8 @@ footer .line {
         margin: 0px;
         color: #000;
         text-align: center;
-        font-size: 36px;
+        font-family: 'Roboto';
+        font-size: 18px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
