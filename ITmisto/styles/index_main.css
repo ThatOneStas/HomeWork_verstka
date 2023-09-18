@@ -403,6 +403,7 @@ header .header_link #common_links:hover {
 
 #projects_and_team .slider_row {
     width: 100%;
+    height: 320px;
     margin-bottom: 38px;
 
     display: flex;
@@ -452,6 +453,62 @@ header .header_link #common_links:hover {
     background-image: url(../img_folder/Ellipse\ 3.png);
 }
 
+#projects_and_team .slider .Circle_3_inner {
+    width: 100%;
+    height: 100%;
+    background-color: #D46363E5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+#projects_and_team .slider .Circle_3_inner:hover {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+#projects_and_team .slider .Circle_3_inner img {
+    margin-top: 24px;
+    margin-bottom: 13px;
+}
+
+#projects_and_team .slider .Circle_3_inner h2 {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin: 0px;
+}
+
+#projects_and_team .slider .Circle_3_inner h3 {
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+
+    margin: 0px 0px 15px 0px;
+}
+
+#projects_and_team .slider .Circle_3_inner p {
+    width: 149px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;  
+
+    margin: 0px;
+}
+
 #projects_and_team .team_button {
     width: 523px;
     height: 97px;
@@ -487,6 +544,23 @@ header .header_link #common_links:hover {
     font-size: 30px;
 
     transition: 0.2s;
+}
+
+#projects_and_team .dots {
+    width: 100%;
+    position: absolute;
+    bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects_and_team .dots div {
+    width: 24px;
+    height: 24px;
+    background-color: #FF9100;
+    margin: 0px 23px;
+    border-radius: 50%;
 }
 
 #partners {
@@ -1157,6 +1231,7 @@ footer .line {
     
     #projects_and_team .slider_row {
         width: 100%;
+        height: 140px;
         margin-bottom: 38px;
     
         display: flex;
@@ -1194,6 +1269,10 @@ footer .line {
     #projects_and_team .slider .Circle_3 {
         background-image: url(../img_folder/Ellipse\ 3.png);
     }
+
+    #projects_and_team .slider .Circle_3_inner {
+        display: none;
+    }
     
     #projects_and_team .team_button {
         width: 223px;
@@ -1226,6 +1305,23 @@ footer .line {
         font-size: 15px;
 
         transition: 0.2s;
+    }
+
+    #projects_and_team .dots {
+        width: 100%;
+        position: absolute;
+        bottom: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #projects_and_team .dots div {
+        width: 11px;
+        height: 11px;
+        background-color: #FF9100;
+        margin: 0px 9px;
+        border-radius: 50%;
     }
     
     #partners {
